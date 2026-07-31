@@ -1,0 +1,216 @@
+/* ===============================
+   Student Grade Calculator
+   style.css
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#4f46e5,#2563eb,#06b6d4);
+
+    padding:20px;
+
+}
+
+.container{
+
+    width:100%;
+    max-width:700px;
+
+}
+
+.card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+
+}
+
+h1{
+
+    text-align:center;
+
+    color:#1e3a8a;
+
+    margin-bottom:10px;
+
+    font-size:32px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+.subjects{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.subject{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.subject label{
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:#374151;
+
+}
+
+.subject input{
+
+    padding:12px 15px;
+
+    border:2px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.subject input:focus{
+
+    outline:none;
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 10px rgba(37,99,235,.2);
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:30px;
+
+}
+
+button{
+
+    flex:1;
+
+    border:none;
+
+    padding:14px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+#calculateBtn{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+#calculateBtn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+#resetBtn{
+
+    background:#ef4444;
+
+    color:white;
+
+}
+
+#resetBtn:hover{
+
+    background:#dc2626;
+
+    transform:translateY(-3px);
+
+}
+
+.result{
+
+    margin-top:35px;
+
+}
+
+.result h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    color:#1e3a8a;
+
+}
+
+.result-box{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f8fafc;
+
+    border-left:6px solid #2563eb;
+
+    padding:15px 20px;
+
+    margin-bottom:15px;
+
+}
